@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Nota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-900">
+    <div class="flex items-center justify-center w-full h-[100vh]">
+        <div class="flex items-center justify-center w-[40%] h-[80vh] bg-white rounded-lg">
+            
+    <form class="flex flex-col w-[70%] items-center justify-center" action="./script.php" method="POST">
+        <h1 class="font-bold text-[35px] text-green-600">CALCULAR NOTA</h1>
+       <div class="flex flex-col mt-2 w-full"> 
+        <label class="font-bold" for="#name">* Nome</label>
+        <input name="name" class="border-none p-3 outline-none bg-[#CFCFCF] rounded-lg shadow shadow-3 shadow-[#DCDCDC] w-full" placeholder="EX: João" id="name" type="text" required>
+       </div>
+
+       <div class="flex flex-col mt-2 w-full">
+        <label class="font-bold" for="option">Selecione o Curso</label>
+        <select  class="border-none p-3 outline-none bg-[#CFCFCF] rounded-lg shadow shadow-3 shadow-[#DCDCDC]" name="selectcurse" id="options">
+            <option selected value="Sistemas de informações">Sistemas de informações</option>
+            <option selected value="Direito">Direito</option>
+        </select>
+        </div>
+
+       <div class="flex flex-col mt-2 w-full"> 
+        <label class="font-bold" for="n1">* Nota 1</label>
+        <input class="border-none p-3 outline-none bg-[#CFCFCF] rounded-lg shadow shadow-3 shadow-[#DCDCDC] w-full" name="n1" placeholder="EX: 1" id="n1" type="number" required>
+       </div>
+        
+       <div class="flex flex-col mt-2 w-full"> 
+        <label class="font-bold" for="n2">* Nota 2</label>
+        <input class="border-none p-3 outline-none bg-[#CFCFCF] rounded-lg shadow shadow-3 shadow-[#DCDCDC] w-full" name="n2" placeholder="EX: 2" id="" type="number" required>
+       </div>
+        
+       <button class="bg-green-500 w-[30%] text-white font-bold p-2 rounded-lg mt-5" type="submit">Calcular</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
